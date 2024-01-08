@@ -113,6 +113,10 @@ body {
   cursor: pointer;
 }
 
+.btn--form {
+  background-color: #6b3d0b;
+}
+
 .subheading {
   font-size: 1.6rem;
   font-weight: 700;

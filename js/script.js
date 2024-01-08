@@ -14,14 +14,13 @@ btnNav.addEventListener('click', function () {
   document.body.classList.toggle('no-scroll');
 });
 
-window.onclick = (event) => {
-  if (!event.target.matches('.main-nav')) {
-    if (header.classList.contains('nav-open')) {
-      header.classList.remove('nav-open');
-
-    }
+document.addEventListener('click', function (e) {
+  if (e.target.classList[0] !== 'main-nav' && e.target.classList[0] !== 'menu-icon') {
+    header.classList.remove('nav-open');
+    document.body.classList.remove('no-scroll');
+    console.log('1111', e.target.classList)
   }
-}
+})
 
 const links = document.querySelectorAll('a');
 links.forEach(function (link) {
