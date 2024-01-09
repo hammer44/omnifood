@@ -28,7 +28,9 @@
   </head>
   <body>
     <header class="main-header">
-      <img class="logo" alt="logo" src="img/omnifood-logo.png" />
+      <a class="logo-link" href="#">
+        <img class="logo" alt="logo" src="img/omnifood-logo.png" />
+      </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a class="nav-link" href="#about">How it works</a></li>
@@ -455,7 +457,7 @@
               Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You
               can cancel or pause anytime. And the first meal is on us!
             </p>
-            <form action="#" class="cta-form">
+            <form method="get" action="https://www.example.com/" class="cta-form">
               <div>
                 <label for="name">Your name</label>
                 <input type="text" id="name" placeholder="John Smith" required />
@@ -475,7 +477,7 @@
                   <option value="other">Others</option>
                 </select>
               </div>
-              <button class="btn btn--form">Sign up now!</button>
+              <button type="submit" class="btn btn--form">Sign up now!</button>
             </form>
           </div>
           <div class="cta-img-box" role="img" aria-label="woman eating food"></div>
