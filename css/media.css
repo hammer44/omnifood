@@ -58,10 +58,6 @@
     font-size: 50%;
   }
 
-  .main-header {
-    display: flex;
-  }
-
   .logo {
     order: 2;
   }
