@@ -216,6 +216,29 @@
   .diets {
     grid-column: 1 / -1;
     justify-self: center;
+    align-items: center;
+  }
+
+  .list--center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .diets li.hidden {
+    display: none;
+  }
+
+  .diets li.visible {
+    display: flex;
+  }
+
+  .btn,
+  .show {
+    display: block;
+    padding: 1.4rem 2.8rem;
+    border-radius: 8px;
+    margin-top: 1.6rem;
   }
 
   .pricing-plan {
@@ -270,8 +293,13 @@
   }
 
   .btn,
-  .btn:link {
+  .btn:link,
+  .show {
     padding: 2.4rem 1.6rem;
+    display: block;
+    padding: 1.4rem 2.8rem;
+    border-radius: 8px;
+    margin-top: 1.6rem;
   }
 
   .primary-img {

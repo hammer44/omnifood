@@ -9,6 +9,19 @@ year.textContent = currentYear;
 const btnNav = document.querySelector('.nav-menu');
 const header = document.querySelector('.main-header');
 const mainNav = document.querySelector('.main-nav');
+const dietsBtn = document.querySelector('.show');
+
+const dietsList = document.querySelectorAll('.diets li');
+dietsList.forEach(function (item) {
+  dietsBtn.addEventListener('click', function () {
+    item.classList.toggle('visible');
+    if (dietsBtn.textContent.includes('Show more')) {
+      dietsBtn.innerHTML = 'Show less';
+    } else {
+      dietsBtn.innerHTML = 'Show more';
+    }
+  })
+})
 
 const form = document.querySelector('.cta-form');
 form.addEventListener('submit', function () {

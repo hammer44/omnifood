@@ -37,7 +37,6 @@ Primary: #e67e22
 
 html {
   font-size: 62.5%;
-  /* overflow-x: hidden; */
 }
 
 body {
@@ -103,7 +102,7 @@ body {
 .btn,
 .btn:link {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 500;
   padding: 1.6rem 3.2rem;
   text-decoration: none;
@@ -111,6 +110,11 @@ body {
   transition: 0.3s;
   border: none;
   cursor: pointer;
+}
+
+.btn,
+.show {
+  display: none;
 }
 
 .btn--form {
